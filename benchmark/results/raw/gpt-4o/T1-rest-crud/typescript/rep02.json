@@ -1,0 +1,88 @@
+{
+  "model": "gpt-4o",
+  "task": "T1-rest-crud",
+  "language": "typescript",
+  "framework": "Fastify",
+  "repetition": 2,
+  "seed": 1236,
+  "passed": true,
+  "pass_at_1": true,
+  "iterations": 1,
+  "input_tokens_total": 522,
+  "output_tokens_total": 1525,
+  "input_tokens_per_iteration": [
+    522
+  ],
+  "output_tokens_per_iteration": [
+    1525
+  ],
+  "cost_usd": 0.016555,
+  "time_to_green_s": 26.57,
+  "files_written": [
+    "main.ts",
+    "main2.ts",
+    "main3.ts",
+    "main.sql",
+    "main.json",
+    "main4.ts",
+    "main5.ts",
+    "main6.ts",
+    "main7.ts",
+    "main8.ts"
+  ],
+  "project_tokens_final": 8420074,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "login"
+    },
+    {
+      "status": 201,
+      "ok": true,
+      "name": "create"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "list"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "get"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "update"
+    },
+    {
+      "status": 400,
+      "ok": true,
+      "name": "invalid-create"
+    },
+    {
+      "status": 401,
+      "ok": true,
+      "name": "unauthorized"
+    },
+    {
+      "status": 204,
+      "body": "",
+      "ok": true,
+      "name": "delete"
+    },
+    {
+      "status": 404,
+      "ok": true,
+      "name": "get-deleted"
+    }
+  ],
+  "timestamp": "2026-09-29T11:15:35+0200"
+}

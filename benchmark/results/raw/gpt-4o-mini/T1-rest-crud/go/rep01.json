@@ -1,0 +1,114 @@
+{
+  "model": "gpt-4o-mini",
+  "task": "T1-rest-crud",
+  "language": "go",
+  "framework": "Gin",
+  "repetition": 1,
+  "seed": 1235,
+  "passed": false,
+  "pass_at_1": false,
+  "iterations": 10,
+  "input_tokens_total": 137687,
+  "output_tokens_total": 19253,
+  "input_tokens_per_iteration": [
+    522,
+    3028,
+    5761,
+    8906,
+    12050,
+    15198,
+    18342,
+    21484,
+    24625,
+    27771
+  ],
+  "output_tokens_per_iteration": [
+    1813,
+    1816,
+    1953,
+    1953,
+    1953,
+    1953,
+    1953,
+    1953,
+    1953,
+    1953
+  ],
+  "cost_usd": 0.03220485,
+  "time_to_green_s": 554.53,
+  "files_written": [
+    "app/main.go",
+    "data/schema.sql",
+    "run.sh",
+    "README.md",
+    "main.go"
+  ],
+  "project_tokens_final": 1913,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "login"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 201",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "create"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 200",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "list"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 200",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "get"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 200",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "update"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected [400, 422]",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "invalid-create"
+    },
+    {
+      "status": 401,
+      "ok": true,
+      "name": "unauthorized"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected [200, 204]",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "delete"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 404",
+      "body": "{'error': 'Invalid token'}",
+      "ok": false,
+      "name": "get-deleted"
+    }
+  ],
+  "timestamp": "2026-09-28T14:45:29+0200"
+}

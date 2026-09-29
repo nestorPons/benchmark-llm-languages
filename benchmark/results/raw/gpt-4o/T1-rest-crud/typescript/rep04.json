@@ -1,0 +1,58 @@
+{
+  "model": "gpt-4o",
+  "task": "T1-rest-crud",
+  "language": "typescript",
+  "framework": "Fastify",
+  "repetition": 4,
+  "seed": 1238,
+  "passed": false,
+  "pass_at_1": false,
+  "iterations": 10,
+  "input_tokens_total": 112517,
+  "output_tokens_total": 15241,
+  "input_tokens_per_iteration": [
+    522,
+    2221,
+    4763,
+    7290,
+    9817,
+    12358,
+    14937,
+    17570,
+    20203,
+    22836
+  ],
+  "output_tokens_per_iteration": [
+    1479,
+    1488,
+    1473,
+    1473,
+    1487,
+    1525,
+    1579,
+    1579,
+    1579,
+    1579
+  ],
+  "cost_usd": 0.4337025,
+  "time_to_green_s": 279.87,
+  "files_written": [
+    "run.sh",
+    "tsconfig.json",
+    "package.json",
+    "src/index.ts",
+    "src/routes/auth.ts",
+    "src/routes/items.ts",
+    "data/schema.sql",
+    "README.md"
+  ],
+  "project_tokens_final": 9062960,
+  "last_steps": [
+    {
+      "name": "build/start",
+      "ok": false,
+      "error": "expected keyword or identifier.\nmain8.ts(8,33): error TS1434: Unexpected keyword or identifier.\nmain8.ts(8,42): error TS1434: Unexpected keyword or identifier.\nmain8.ts(8,47): error TS1434: Unexpected keyword or identifier.\nmain8.ts(9,1): error TS1003: Identifier expected.\nmain8.ts(9,20): error TS1005: ';' expected.\nmain8.ts(9,22): error TS1434: Unexpected keyword or identifier.\nmain8.ts(9,29): error TS1434: Unexpected keyword or identifier.\nmain8.ts(9,31): error TS1434: Unexpected keyword or identifier.\nmain8.ts(9,40): error TS1434: Unexpected keyword or identifier.\nmain8.ts(9,45): error TS1434: Unexpected keyword or identifier.\nmain8.ts(10,1): error TS1003: Identifier expected.\nmain8.ts(10,23): error TS1005: ';' expected.\nmain8.ts(10,25): error TS1435: Unknown keyword or identifier. Did you mean 'delete'?\nmain8.ts(10,32): error TS1434: Unexpected keyword or identifier.\nmain8.ts(10,34): error TS1434: Unexpected keyword or identifier.\nmain8.ts(10,43): error TS1434: Unexpected keyword or identifier.\nmain8.ts(10,48): error TS1434: Unexpected keyword or identifier.\nmain8.ts(10,54): error TS1003: Identifier expected.\nmain9.ts(2,1): error TS1434: Unexpected keyword or identifier.\nmain9.ts(2,5): error TS1434: Unexpected keyword or identifier.\nmain9.ts(2,12): error TS1434: Unexpected keyword or identifier.\nmain9.ts(2,17): error TS1434: Unexpected keyword or identifier.\nmain9.ts(2,20): error TS1434: Unexpected keyword or identifier.\nmain9.ts(2,55): error TS1003: Identifier expected."
+    }
+  ],
+  "timestamp": "2026-09-29T11:21:01+0200"
+}

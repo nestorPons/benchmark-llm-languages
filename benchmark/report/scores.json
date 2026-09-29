@@ -1,0 +1,94 @@
+{
+  "default": {
+    "gpt-4o|T1-rest-crud|go": {
+      "objectives": {
+        "reduce_output_tokens": 0.934541477894079,
+        "reduce_context_tokens": 0.9990094755318607,
+        "reduce_generation_errors": 1.0,
+        "reduce_execution_time": 1.0,
+        "reduce_total_ai_cost": 0.9648858336008312
+      },
+      "total": 0.9830098097340572
+    },
+    "gpt-4o|T1-rest-crud|python": {
+      "objectives": {
+        "reduce_output_tokens": 0.0,
+        "reduce_context_tokens": 0.051514555611393946,
+        "reduce_generation_errors": 0.0,
+        "reduce_execution_time": 0.0,
+        "reduce_total_ai_cost": 0.0
+      },
+      "total": 0.007727183341709092
+    },
+    "gpt-4o|T1-rest-crud|typescript": {
+      "objectives": {
+        "reduce_output_tokens": 0.6564078529396449,
+        "reduce_context_tokens": 0.8338613702740694,
+        "reduce_generation_errors": 0.8,
+        "reduce_execution_time": 0.6693795981446763,
+        "reduce_total_ai_cost": 0.7543971810321901
+      },
+      "total": 0.7352336991318981
+    },
+    "gpt-4o-mini|T1-rest-crud|go": {
+      "objectives": {
+        "reduce_output_tokens": 0.022600635317398324,
+        "reduce_context_tokens": 0.0,
+        "reduce_generation_errors": 0.0,
+        "reduce_execution_time": 1.0,
+        "reduce_total_ai_cost": 0.9390954173801807
+      },
+      "total": 0.4912091787736459
+    },
+    "gpt-4o-mini|T1-rest-crud|typescript": {
+      "objectives": {
+        "reduce_output_tokens": 0.17804509712024164,
+        "reduce_context_tokens": 0.1175519479100662,
+        "reduce_generation_errors": 0.0,
+        "reduce_execution_time": 0.6693795981446763,
+        "reduce_total_ai_cost": 0.9471480816515685
+      },
+      "total": 0.43458305252826274
+    },
+    "gpt-4o-mini|T3-transform|python": {
+      "objectives": {
+        "reduce_output_tokens": 0.6488569494349841,
+        "reduce_context_tokens": 0.4792608939483325,
+        "reduce_generation_errors": 0.0,
+        "reduce_execution_time": 0.0,
+        "reduce_total_ai_cost": 0.971761187649446
+      },
+      "total": 0.3635699140373867
+    },
+    "gpt-4o-mini|T4-cpu|python": {
+      "objectives": {
+        "reduce_output_tokens": 1.0,
+        "reduce_context_tokens": 1.0,
+        "reduce_generation_errors": 1.0,
+        "reduce_execution_time": 0.0,
+        "reduce_total_ai_cost": 1.0
+      },
+      "total": 0.7
+    },
+    "gpt-4o-mini|T7-modify|python": {
+      "objectives": {
+        "reduce_output_tokens": 0.9591730458782481,
+        "reduce_context_tokens": 0.9418649536419983,
+        "reduce_generation_errors": 1.0,
+        "reduce_execution_time": 0.0,
+        "reduce_total_ai_cost": 0.9968116267318629
+      },
+      "total": 0.6845180252744095
+    },
+    "gpt-4o-mini|T8-refactor|python": {
+      "objectives": {
+        "reduce_output_tokens": 0.9620892568869448,
+        "reduce_context_tokens": 0.9371745289546325,
+        "reduce_generation_errors": 1.0,
+        "reduce_execution_time": 0.0,
+        "reduce_total_ai_cost": 0.9966911808987438
+      },
+      "total": 0.6842278040559854
+    }
+  }
+}

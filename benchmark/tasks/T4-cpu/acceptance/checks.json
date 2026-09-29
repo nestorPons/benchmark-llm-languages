@@ -1,0 +1,19 @@
+{
+  "port": 8005,
+  "startup_retries": 30,
+  "startup_delay_s": 1.0,
+  "steps": [
+    { "name": "sort", "method": "POST", "path": "/compute",
+      "json": { "values": [5, 3, 8, 1, 2] },
+      "expect_status": 200,
+      "expect_json": { "sorted": [1, 2, 3, 5, 8] } },
+    { "name": "sort-2", "method": "POST", "path": "/compute",
+      "json": { "values": [9, 1, 4] },
+      "expect_status": 200,
+      "expect_json": { "sorted": [1, 4, 9] } },
+    { "name": "hash", "method": "POST", "path": "/hash",
+      "json": { "input": "hello" },
+      "expect_status": 200,
+      "expect_json": { "sha256": "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824" } }
+  ]
+}

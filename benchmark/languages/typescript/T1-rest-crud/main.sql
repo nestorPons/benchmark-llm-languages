@@ -1,0 +1,8 @@
+-- app/data/schema.sql
+CREATE TABLE IF NOT EXISTS Item (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  description TEXT,
+  price REAL NOT NULL CHECK(price >= 0),
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);

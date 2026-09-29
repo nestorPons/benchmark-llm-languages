@@ -1,0 +1,23 @@
+{
+  "port": 8005,
+  "startup_retries": 30,
+  "startup_delay_s": 1.0,
+  "steps": [
+    { "name": "health", "method": "GET", "path": "/health", "expect_status": 200 },
+    { "name": "login", "method": "POST", "path": "/auth/login",
+      "json": { "username": "admin", "password": "secret" },
+      "expect_status": 200, "save": "token", "json_path": "token" },
+    { "name": "batch", "method": "POST", "path": "/items/batch",
+      "headers": { "Authorization": "Bearer {token}" },
+      "json": { "items": [
+        { "name": "a", "description": "x", "price": 1.0 },
+        { "name": "b", "description": "y", "price": 2.0 }
+      ] },
+      "expect_status": [200, 201] },
+    { "name": "negative-price-rejected", "method": "POST", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" },
+      "json": { "name": "bad", "price": -1 }, "expect_status": 400 },
+    { "name": "list", "method": "GET", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": 200 }
+  ]
+}

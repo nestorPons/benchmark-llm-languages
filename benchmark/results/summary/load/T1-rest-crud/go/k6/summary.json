@@ -1,0 +1,87 @@
+{
+    "task": "T1-rest-crud",
+    "language": "go",
+    "tool": "k6",
+    "runs": [
+        {
+            "vus": 1,
+            "rep": 1,
+            "http_reqs": 349.04017352093473,
+            "http_req_duration_p95": 5.771855199999996,
+            "http_req_duration_p99": 9.596962960000006,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 2,
+            "http_reqs": 291.52974873053734,
+            "http_req_duration_p95": 7.276575799999999,
+            "http_req_duration_p99": 11.911658119999997,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 3,
+            "http_reqs": 410.917605336986,
+            "http_req_duration_p95": 5.471558899999999,
+            "http_req_duration_p99": 9.90101514,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 4,
+            "http_reqs": 347.36395056733573,
+            "http_req_duration_p95": 5.5024432999999995,
+            "http_req_duration_p99": 8.456563820000023,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 5,
+            "http_reqs": 423.3037182150801,
+            "http_req_duration_p95": 4.2100856,
+            "http_req_duration_p99": 6.216190080000001,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 1,
+            "http_reqs": 880.0688263069029,
+            "http_req_duration_p95": 18.118966199999985,
+            "http_req_duration_p99": 29.711434479999983,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 2,
+            "http_reqs": 877.2666225271544,
+            "http_req_duration_p95": 18.789834599999995,
+            "http_req_duration_p99": 29.41251463999999,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 3,
+            "http_reqs": 945.4810267647483,
+            "http_req_duration_p95": 16.262594,
+            "http_req_duration_p99": 26.25757020000007,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 4,
+            "http_reqs": 866.2723220145779,
+            "http_req_duration_p95": 18.722190649999987,
+            "http_req_duration_p99": 30.330707239999995,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 5,
+            "http_reqs": 851.6819376832074,
+            "http_req_duration_p95": 18.549230199999993,
+            "http_req_duration_p99": 29.85531219999999,
+            "errors": 0
+        }
+    ]
+}

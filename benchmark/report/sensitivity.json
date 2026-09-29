@@ -1,0 +1,35 @@
+{
+  "default": {
+    "gpt-4o|T1-rest-crud|go": 0.983,
+    "gpt-4o|T1-rest-crud|python": 0.008,
+    "gpt-4o|T1-rest-crud|typescript": 0.735,
+    "gpt-4o-mini|T1-rest-crud|go": 0.491,
+    "gpt-4o-mini|T1-rest-crud|typescript": 0.435,
+    "gpt-4o-mini|T3-transform|python": 0.364,
+    "gpt-4o-mini|T4-cpu|python": 0.7,
+    "gpt-4o-mini|T7-modify|python": 0.685,
+    "gpt-4o-mini|T8-refactor|python": 0.684
+  },
+  "prod_heavy": {
+    "gpt-4o|T1-rest-crud|go": 0.98,
+    "gpt-4o|T1-rest-crud|python": 0.01,
+    "gpt-4o|T1-rest-crud|typescript": 0.749,
+    "gpt-4o-mini|T1-rest-crud|go": 0.342,
+    "gpt-4o-mini|T1-rest-crud|typescript": 0.349,
+    "gpt-4o-mini|T3-transform|python": 0.42,
+    "gpt-4o-mini|T4-cpu|python": 0.85,
+    "gpt-4o-mini|T7-modify|python": 0.83,
+    "gpt-4o-mini|T8-refactor|python": 0.829
+  },
+  "perf_heavy": {
+    "gpt-4o|T1-rest-crud|go": 0.99,
+    "gpt-4o|T1-rest-crud|python": 0.003,
+    "gpt-4o|T1-rest-crud|typescript": 0.707,
+    "gpt-4o-mini|T1-rest-crud|go": 0.789,
+    "gpt-4o-mini|T1-rest-crud|typescript": 0.606,
+    "gpt-4o-mini|T3-transform|python": 0.251,
+    "gpt-4o-mini|T4-cpu|python": 0.4,
+    "gpt-4o-mini|T7-modify|python": 0.394,
+    "gpt-4o-mini|T8-refactor|python": 0.394
+  }
+}

@@ -1,0 +1,87 @@
+{
+    "task": "T1-rest-crud",
+    "language": "typescript",
+    "tool": "k6",
+    "runs": [
+        {
+            "vus": 1,
+            "rep": 1,
+            "http_reqs": 336.3334945885252,
+            "http_req_duration_p95": 6.367032599999996,
+            "http_req_duration_p99": 10.510159959999994,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 2,
+            "http_reqs": 244.49264542639418,
+            "http_req_duration_p95": 9.46713,
+            "http_req_duration_p99": 15.214028400000014,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 3,
+            "http_reqs": 282.5630950416672,
+            "http_req_duration_p95": 8.2615683,
+            "http_req_duration_p99": 14.013411339999989,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 4,
+            "http_reqs": 416.1235250665925,
+            "http_req_duration_p95": 5.1596165,
+            "http_req_duration_p99": 8.917566249999982,
+            "errors": 0
+        },
+        {
+            "vus": 1,
+            "rep": 5,
+            "http_reqs": 601.0117101750071,
+            "http_req_duration_p95": 3.4574799000000005,
+            "http_req_duration_p99": 6.12137762,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 1,
+            "http_reqs": 673.672670160753,
+            "http_req_duration_p95": 26.13487569999999,
+            "http_req_duration_p99": 41.64195565999997,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 2,
+            "http_reqs": 623.3279134038795,
+            "http_req_duration_p95": 25.686255349999996,
+            "http_req_duration_p99": 37.82691555999988,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 3,
+            "http_reqs": 769.0503376131732,
+            "http_req_duration_p95": 21.427875999999998,
+            "http_req_duration_p99": 34.938929499999965,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 4,
+            "http_reqs": 474.2930887778366,
+            "http_req_duration_p95": 32.681000449999985,
+            "http_req_duration_p99": 48.996868670000055,
+            "errors": 0
+        },
+        {
+            "vus": 10,
+            "rep": 5,
+            "http_reqs": 546.476557685105,
+            "http_req_duration_p95": 30.585059399999984,
+            "http_req_duration_p99": 45.5049292,
+            "errors": 0
+        }
+    ]
+}

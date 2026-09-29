@@ -1,0 +1,76 @@
+{
+  "seed": 1234,
+  "repetitions": 5,
+  "max_iterations": 10,
+  "system_prompt": "You are an expert software developer. Produce complete, idiomatic, runnable code for the task in the specified language and framework. Output every file as a fenced code block with the file path in the fence info, for example:\n```python app/main.py\n<code>\n```\nAlso produce a run.sh (bash) entrypoint. For an HTTP service, run.sh start must set up a self-contained environment first (for example: Python -> create a venv and pip install -r requirements.txt; Node.js -> npm install; Go -> go mod tidy then go build), then start the service in the background on port 8005, write its PID to server.pid, and return 0; run.sh stop must stop that process and remove server.pid. Do not assume packages are pre-installed. For a CLI program, run.sh must forward its subcommands (e.g. init/add/list) to the program. A README.md is optional. Do not add commentary outside code blocks.",
+
+  "models": [
+    {
+      "name": "gpt-4o",
+      "api_base": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "temperature": 0.0,
+      "max_tokens": 8192,
+      "input_price_per_1k": 0.0025,
+      "output_price_per_1k": 0.01
+    },
+    {
+      "name": "gpt-4o-mini",
+      "api_base": "https://api.openai.com/v1",
+      "api_key_env": "OPENAI_API_KEY",
+      "temperature": 0.0,
+      "max_tokens": 8192,
+      "input_price_per_1k": 0.00015,
+      "output_price_per_1k": 0.0006
+    }
+  ],
+
+  "tasks": [
+    "T1-rest-crud",
+    "T2-worker",
+    "T3-transform",
+    "T4-cpu",
+    "T5-web",
+    "T6-desktop",
+    "T7-modify",
+    "T8-refactor"
+  ],
+
+  "languages": [
+    { "name": "typescript", "runtime": "Node.js 20", "framework": "Fastify" },
+    { "name": "python", "runtime": "CPython 3.12", "framework": "FastAPI" },
+    { "name": "go", "runtime": "Go 1.22", "framework": "Gin" },
+    { "name": "rust", "runtime": "stable", "framework": "Axum" },
+    { "name": "csharp", "runtime": ".NET 8", "framework": "ASP.NET Core" },
+    { "name": "java", "runtime": "JDK 21", "framework": "Spring Boot" },
+    { "name": "php", "runtime": "PHP 8.3 (OPcache+JIT)", "framework": "Slim" },
+    { "name": "dart", "runtime": "Dart 3 (AOT)", "framework": "Shelf" },
+    { "name": "swift", "runtime": "Swift 6", "framework": "Vapor" },
+    { "name": "scala", "runtime": "JVM 21", "framework": "http4s" },
+    { "name": "groovy", "runtime": "JVM 21", "framework": "Micronaut" },
+    { "name": "perl", "runtime": "Perl 5.36", "framework": "Mojolicious" },
+    { "name": "raku", "runtime": "Rakudo", "framework": "Cro" },
+    { "name": "ruby", "runtime": "CRuby 3.3 (YJIT)", "framework": "Sinatra" },
+    { "name": "lua", "runtime": "LuaJIT 2.1", "framework": "OpenResty" },
+    { "name": "elixir", "runtime": "OTP 26", "framework": "Phoenix" },
+    { "name": "clojure", "runtime": "JVM 21", "framework": "Ring + Reitit" },
+    { "name": "julia", "runtime": "1.10", "framework": "HTTP.jl" },
+    { "name": "nim", "runtime": "2.x", "framework": "Prologue" },
+    { "name": "crystal", "runtime": "1.x", "framework": "Kemal" },
+    { "name": "kotlin", "runtime": "JVM 21", "framework": "Ktor" },
+    { "name": "fsharp-ocaml", "runtime": ".NET 8 / OCaml 5", "framework": "Giraffe / Dream" }
+  ],
+
+  "weights": {
+    "productivity": 0.4,
+    "performance": 0.4,
+    "maintainability": 0.2,
+    "objectives": {
+      "reduce_output_tokens": 0.15,
+      "reduce_context_tokens": 0.15,
+      "reduce_generation_errors": 0.20,
+      "reduce_execution_time": 0.30,
+      "reduce_total_ai_cost": 0.20
+    }
+  }
+}

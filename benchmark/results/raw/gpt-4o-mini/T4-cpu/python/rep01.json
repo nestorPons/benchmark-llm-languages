@@ -1,0 +1,46 @@
+{
+  "model": "gpt-4o-mini",
+  "task": "T4-cpu",
+  "language": "python",
+  "framework": "FastAPI",
+  "repetition": 1,
+  "seed": 1235,
+  "passed": true,
+  "pass_at_1": true,
+  "iterations": 1,
+  "input_tokens_total": 386,
+  "output_tokens_total": 484,
+  "input_tokens_per_iteration": [
+    386
+  ],
+  "output_tokens_per_iteration": [
+    484
+  ],
+  "cost_usd": 0.00034829999999999996,
+  "time_to_green_s": 36.58,
+  "files_written": [
+    "app/main.py",
+    "run.sh",
+    "README.md",
+    "requirements.txt"
+  ],
+  "project_tokens_final": 1620144,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "sort"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "sort-2"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "hash"
+    }
+  ],
+  "timestamp": "2026-09-29T09:53:51+0200"
+}

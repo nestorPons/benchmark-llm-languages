@@ -1,0 +1,5 @@
+id,name,category,amount,created_at
+1,alpha,A,10.50,2026-01-01
+2,beta,B,20.00,2026-01-02
+3,gamma,A,30.25,2026-01-03
+4,delta,C,5.00,2026-01-04

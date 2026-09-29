@@ -1,0 +1,55 @@
+{
+  "model": "gpt-4o-mini",
+  "task": "T8-refactor",
+  "language": "python",
+  "framework": "FastAPI",
+  "repetition": 1,
+  "seed": 1235,
+  "passed": true,
+  "pass_at_1": true,
+  "iterations": 1,
+  "input_tokens_total": 9012,
+  "output_tokens_total": 1212,
+  "input_tokens_per_iteration": [
+    9012
+  ],
+  "output_tokens_per_iteration": [
+    1212
+  ],
+  "cost_usd": 0.002079,
+  "time_to_green_s": 52.13,
+  "files_written": [
+    "main.py",
+    "validation.py",
+    "run.sh"
+  ],
+  "project_tokens_final": 2324183,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "login"
+    },
+    {
+      "status": 201,
+      "ok": true,
+      "name": "create"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "get"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "list"
+    }
+  ],
+  "timestamp": "2026-09-29T09:52:42+0200"
+}

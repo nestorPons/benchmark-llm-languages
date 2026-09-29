@@ -1,0 +1,10 @@
+model,task,language,n,pass_rate,pass_at_1,iters_med,in_med,out_med,cost_med,cost_p25,cost_p75,tput_vus10_med,p95_vus10_med,score_total
+gpt-4o,T1-rest-crud,go,5,1.00,1.00,1,522,1741,0.0187,0.0182,0.0194,877,18.5,0.983
+gpt-4o,T1-rest-crud,typescript,5,0.80,0.40,5,23197,7082,0.1288,0.0180,0.2255,623,26.1,0.735
+gpt-4o-mini,T4-cpu,python,1,1.00,1.00,1,386,484,0.0003,0.0003,0.0003,,,0.700
+gpt-4o-mini,T7-modify,python,5,1.00,1.00,1,8368,1268,0.0020,0.0020,0.0020,109,145.6,0.685
+gpt-4o-mini,T8-refactor,python,1,1.00,1.00,1,9012,1212,0.0021,0.0021,0.0021,,,0.684
+gpt-4o-mini,T1-rest-crud,go,1,0.00,0.00,10,137687,19253,0.0322,0.0322,0.0322,877,18.5,0.491
+gpt-4o-mini,T1-rest-crud,typescript,1,0.00,0.00,10,121547,16268,0.0280,0.0280,0.0280,623,26.1,0.435
+gpt-4o-mini,T3-transform,python,1,0.00,0.00,10,71884,7227,0.0151,0.0151,0.0151,,,0.364
+gpt-4o,T1-rest-crud,python,1,0.00,0.00,10,130614,19687,0.5234,0.5234,0.5234,,,0.008

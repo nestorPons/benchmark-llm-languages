@@ -1,0 +1,9 @@
+{
+  "steps": [
+    { "name": "init", "command": "bash run.sh init", "expect_exit": 0 },
+    { "name": "add", "command": "bash run.sh add item1 10", "expect_exit": 0 },
+    { "name": "list-json", "command": "bash run.sh list --format json",
+      "expect_exit": 0,
+      "expect_stdout_json": { "entries": [ { "name": "item1", "value": 10 } ] } }
+  ]
+}

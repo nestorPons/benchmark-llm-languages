@@ -1,0 +1,22 @@
+{
+  "port": 8005,
+  "startup_retries": 30,
+  "startup_delay_s": 1.0,
+  "steps": [
+    { "name": "health", "method": "GET", "path": "/health", "expect_status": 200 },
+    { "name": "transform-json", "method": "POST", "path": "/transform",
+      "json": { "records": [
+        { "id": 1, "name": "alpha", "category": "A", "amount": 10.5 },
+        { "id": 2, "name": "beta", "category": "B", "amount": 20.0 },
+        { "id": 3, "name": "gamma", "category": "A", "amount": 30.25 },
+        { "id": 4, "name": "delta", "category": "C", "amount": 5.0 }
+      ] },
+      "expect_status": 200,
+      "expect_json": { "count": 4, "total_amount": 65.75 } },
+    { "name": "transform-csv", "method": "POST", "path": "/transform/csv",
+      "headers": { "Content-Type": "text/csv" },
+      "body": "id,name,category,amount\n1,alpha,A,10.5\n2,beta,B,20.0\n3,gamma,A,30.25\n4,delta,C,5.0",
+      "expect_status": 200,
+      "expect_json": { "count": 4, "total_amount": 65.75 } }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "model": "gpt-4o-mini",
+  "task": "T7-modify",
+  "language": "python",
+  "framework": "FastAPI",
+  "repetition": 2,
+  "seed": 1236,
+  "passed": true,
+  "pass_at_1": true,
+  "iterations": 1,
+  "input_tokens_total": 8368,
+  "output_tokens_total": 1268,
+  "input_tokens_per_iteration": [
+    8368
+  ],
+  "output_tokens_per_iteration": [
+    1268
+  ],
+  "cost_usd": 0.002016,
+  "time_to_green_s": 37.95,
+  "files_written": [
+    "main.py",
+    "run.sh"
+  ],
+  "project_tokens_final": 2324246,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "login"
+    },
+    {
+      "status": 201,
+      "ok": true,
+      "name": "batch"
+    },
+    {
+      "status": 400,
+      "ok": true,
+      "name": "negative-price-rejected"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "list"
+    }
+  ],
+  "timestamp": "2026-09-29T11:13:25+0200"
+}

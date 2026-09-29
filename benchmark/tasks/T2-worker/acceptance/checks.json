@@ -1,0 +1,22 @@
+{
+  "port": 8005,
+  "startup_retries": 30,
+  "startup_delay_s": 1.0,
+  "steps": [
+    { "name": "health", "method": "GET", "path": "/health", "expect_status": 200 },
+    { "name": "enqueue", "method": "POST", "path": "/jobs",
+      "json": { "id": "job-1", "payload": { "n": 100000 } },
+      "expect_status": [200, 201, 202] },
+    { "name": "batch", "method": "POST", "path": "/jobs/batch",
+      "json": { "jobs": [
+        { "id": "job-2", "payload": { "n": 200000 } },
+        { "id": "job-3", "payload": { "n": 300000 } }
+      ] },
+      "expect_status": [200, 201, 202] },
+    { "name": "job-done", "method": "GET", "path": "/jobs/job-1",
+      "expect_status": 200, "expect_json": { "status": "done" },
+      "retries": 20, "retry_delay_s": 0.5 },
+    { "name": "stats", "method": "GET", "path": "/stats",
+      "expect_status": 200, "json_path": "done", "save": "done_count" }
+  ]
+}

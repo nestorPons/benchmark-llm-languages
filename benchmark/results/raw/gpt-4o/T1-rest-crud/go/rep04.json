@@ -1,0 +1,83 @@
+{
+  "model": "gpt-4o",
+  "task": "T1-rest-crud",
+  "language": "go",
+  "framework": "Gin",
+  "repetition": 4,
+  "seed": 1238,
+  "passed": true,
+  "pass_at_1": true,
+  "iterations": 1,
+  "input_tokens_total": 522,
+  "output_tokens_total": 1989,
+  "input_tokens_per_iteration": [
+    522
+  ],
+  "output_tokens_per_iteration": [
+    1989
+  ],
+  "cost_usd": 0.021195000000000002,
+  "time_to_green_s": 25.03,
+  "files_written": [
+    "main.go",
+    "data/schema.sql",
+    "run.sh",
+    "go.mod",
+    "README.md"
+  ],
+  "project_tokens_final": 2050,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "login"
+    },
+    {
+      "status": 201,
+      "ok": true,
+      "name": "create"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "list"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "get"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "update"
+    },
+    {
+      "status": 400,
+      "ok": true,
+      "name": "invalid-create"
+    },
+    {
+      "status": 401,
+      "ok": true,
+      "name": "unauthorized"
+    },
+    {
+      "status": 204,
+      "body": "",
+      "ok": true,
+      "name": "delete"
+    },
+    {
+      "status": 404,
+      "ok": true,
+      "name": "get-deleted"
+    }
+  ],
+  "timestamp": "2026-09-29T10:39:15+0200"
+}

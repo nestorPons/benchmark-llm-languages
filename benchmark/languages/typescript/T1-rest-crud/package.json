@@ -1,0 +1,19 @@
+{
+  "name": "fastify-api",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "fastify": "^4.0.0",
+    "@fastify/jwt": "^6.0.0",
+    "better-sqlite3": "^8.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "@types/better-sqlite3": "^7.6.0"
+  }
+}

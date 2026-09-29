@@ -1,0 +1,88 @@
+{
+  "model": "gpt-4o",
+  "task": "T1-rest-crud",
+  "language": "typescript",
+  "framework": "Fastify",
+  "repetition": 3,
+  "seed": 1237,
+  "passed": true,
+  "pass_at_1": true,
+  "iterations": 1,
+  "input_tokens_total": 522,
+  "output_tokens_total": 1670,
+  "input_tokens_per_iteration": [
+    522
+  ],
+  "output_tokens_per_iteration": [
+    1670
+  ],
+  "cost_usd": 0.018005,
+  "time_to_green_s": 30.13,
+  "files_written": [
+    "run.sh",
+    "package.json",
+    "tsconfig.json",
+    "src/index.ts",
+    "src/routes/auth.ts",
+    "src/routes/items.ts",
+    "data/schema.sql",
+    "README.md",
+    "main.ts",
+    "main2.ts"
+  ],
+  "project_tokens_final": 8419802,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "login"
+    },
+    {
+      "status": 201,
+      "ok": true,
+      "name": "create"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "list"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "get"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "update"
+    },
+    {
+      "status": 400,
+      "ok": true,
+      "name": "invalid-create"
+    },
+    {
+      "status": 401,
+      "ok": true,
+      "name": "unauthorized"
+    },
+    {
+      "status": 204,
+      "body": "",
+      "ok": true,
+      "name": "delete"
+    },
+    {
+      "status": 404,
+      "ok": true,
+      "name": "get-deleted"
+    }
+  ],
+  "timestamp": "2026-09-29T11:16:12+0200"
+}

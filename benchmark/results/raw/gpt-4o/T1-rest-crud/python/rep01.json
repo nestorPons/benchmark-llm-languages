@@ -1,0 +1,115 @@
+{
+  "model": "gpt-4o",
+  "task": "T1-rest-crud",
+  "language": "python",
+  "framework": "FastAPI",
+  "repetition": 1,
+  "seed": 1235,
+  "passed": false,
+  "pass_at_1": false,
+  "iterations": 10,
+  "input_tokens_total": 130614,
+  "output_tokens_total": 19687,
+  "input_tokens_per_iteration": [
+    524,
+    2921,
+    5761,
+    8700,
+    11633,
+    14441,
+    17281,
+    20220,
+    23111,
+    26022
+  ],
+  "output_tokens_per_iteration": [
+    1822,
+    1835,
+    1923,
+    1917,
+    1961,
+    1993,
+    2085,
+    2037,
+    2057,
+    2057
+  ],
+  "cost_usd": 0.523405,
+  "time_to_green_s": 685.59,
+  "files_written": [
+    "app/main.py",
+    "app/data/schema.sql",
+    "run.sh",
+    "README.md"
+  ],
+  "project_tokens_final": 3359372,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 500,
+      "body": "Internal Server Error",
+      "error": "status 500, expected 200",
+      "ok": false,
+      "name": "login"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 201",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "create"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 200",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "list"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 200",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "get"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 200",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "update"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected [400, 422]",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "invalid-create"
+    },
+    {
+      "status": 401,
+      "ok": true,
+      "name": "unauthorized"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected [200, 204]",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "delete"
+    },
+    {
+      "status": 401,
+      "error": "status 401, expected 404",
+      "body": "{'detail': 'Could not validate credentials'}",
+      "ok": false,
+      "name": "get-deleted"
+    }
+  ],
+  "timestamp": "2026-09-28T15:34:10+0200"
+}

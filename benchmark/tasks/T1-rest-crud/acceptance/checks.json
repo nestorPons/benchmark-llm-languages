@@ -1,0 +1,33 @@
+{
+  "port": 8005,
+  "startup_retries": 30,
+  "startup_delay_s": 1.0,
+  "steps": [
+    { "name": "health", "method": "GET", "path": "/health", "expect_status": 200 },
+    { "name": "login", "method": "POST", "path": "/auth/login",
+      "json": { "username": "admin", "password": "secret" },
+      "expect_status": 200, "save": "token", "json_path": ["token", "access_token"] },
+    { "name": "create", "method": "POST", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" },
+      "json": { "name": "widget", "description": "a widget", "price": 9.99 },
+      "expect_status": 201, "save": "item_id", "json_path": "id" },
+    { "name": "list", "method": "GET", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": 200 },
+    { "name": "get", "method": "GET", "path": "/items/{item_id}",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": 200,
+      "expect_json": { "name": "widget" } },
+    { "name": "update", "method": "PUT", "path": "/items/{item_id}",
+      "headers": { "Authorization": "Bearer {token}" },
+      "json": { "name": "widget-v2", "description": "a widget", "price": 12.5 },
+      "expect_status": 200 },
+    { "name": "invalid-create", "method": "POST", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" },
+      "json": { "name": "bad", "price": -1 }, "expect_status": [400, 422] },
+    { "name": "unauthorized", "method": "GET", "path": "/items",
+      "expect_status": [401, 403] },
+    { "name": "delete", "method": "DELETE", "path": "/items/{item_id}",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": [200, 204] },
+    { "name": "get-deleted", "method": "GET", "path": "/items/{item_id}",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": 404 }
+  ]
+}

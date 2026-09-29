@@ -1,0 +1,20 @@
+{
+  "port": 8005,
+  "startup_retries": 30,
+  "startup_delay_s": 1.0,
+  "steps": [
+    { "name": "health", "method": "GET", "path": "/health", "expect_status": 200 },
+    { "name": "login", "method": "POST", "path": "/auth/login",
+      "json": { "username": "admin", "password": "secret" },
+      "expect_status": 200, "save": "token", "json_path": "token" },
+    { "name": "create", "method": "POST", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" },
+      "json": { "name": "widget", "description": "a widget", "price": 9.99 },
+      "expect_status": 201, "save": "item_id", "json_path": "id" },
+    { "name": "get", "method": "GET", "path": "/items/{item_id}",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": 200,
+      "expect_json": { "name": "widget" } },
+    { "name": "list", "method": "GET", "path": "/items",
+      "headers": { "Authorization": "Bearer {token}" }, "expect_status": 200 }
+  ]
+}

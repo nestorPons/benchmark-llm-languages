@@ -1,0 +1,65 @@
+{
+  "model": "gpt-4o-mini",
+  "task": "T3-transform",
+  "language": "python",
+  "framework": "FastAPI",
+  "repetition": 1,
+  "seed": 1235,
+  "passed": false,
+  "pass_at_1": false,
+  "iterations": 10,
+  "input_tokens_total": 71884,
+  "output_tokens_total": 7227,
+  "input_tokens_per_iteration": [
+    393,
+    2002,
+    3492,
+    4982,
+    6464,
+    7946,
+    9428,
+    10910,
+    12392,
+    13875
+  ],
+  "output_tokens_per_iteration": [
+    648,
+    737,
+    737,
+    729,
+    729,
+    729,
+    729,
+    729,
+    730,
+    730
+  ],
+  "cost_usd": 0.0151188,
+  "time_to_green_s": 218.24,
+  "files_written": [
+    "app/main.py",
+    "run.sh",
+    "README.md"
+  ],
+  "project_tokens_final": 13668651,
+  "last_steps": [
+    {
+      "status": 200,
+      "ok": true,
+      "name": "health"
+    },
+    {
+      "status": 200,
+      "ok": true,
+      "name": "transform-json"
+    },
+    {
+      "status": 422,
+      "error": "status 422, expected 200",
+      "body": "{'detail': [{'type': 'missing', 'loc': ['body', 'file'], 'msg': 'Field required', 'input': None}]}",
+      "ok": false,
+      "name": "transform-csv"
+    }
+  ],
+  "timestamp": "2026-09-28T15:22:00+0200"
+}
